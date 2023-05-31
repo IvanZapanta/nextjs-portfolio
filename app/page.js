@@ -13,7 +13,7 @@ import design from "../public/mobile.png";
 import consulting from "../public/ai.png";
 import Image from "next/image";
 import proj1 from "../public/reached.png";
-import proj2 from "../public/wellness-app.PNG";
+import proj2 from "../public/wellness.png";
 import proj3 from "../public/aws.png";
 import toast, { Toaster } from 'react-hot-toast';
 import { Fade } from "react-awesome-reveal";
