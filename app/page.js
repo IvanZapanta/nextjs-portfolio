@@ -13,7 +13,7 @@ import design from "../public/mobile.png";
 import consulting from "../public/ai.png";
 import Image from "next/image";
 import proj1 from "../public/reached.png";
-import proj2 from "../public/wellness.png";
+import proj2 from "../public/wellness-app.PNG";
 import proj3 from "../public/aws.png";
 import toast, { Toaster } from 'react-hot-toast';
 import { Fade } from "react-awesome-reveal";
@@ -376,7 +376,7 @@ export default function Home() {
             </div>
           </section>
         </Fade>
-        
+
         {/* Footer */}
         <footer className="py-4 text-center text-gray-500 dark:text-gray-400 text-sm">
           &copy; {new Date().getFullYear()} Ivan Joshua Zapanta. All rights reserved.
