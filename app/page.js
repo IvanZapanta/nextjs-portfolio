@@ -14,7 +14,8 @@ import consulting from "../public/ai.png";
 import Image from "next/image";
 import proj1 from "../public/reached.png";
 import proj2 from "../public/wellness.png";
-import proj3 from "../public/aws.png";
+import proj3 from "../public/recognizer-ml.png";
+import proj4 from "../public/motorbike.png";
 import toast, { Toaster } from 'react-hot-toast';
 import { Fade } from "react-awesome-reveal";
 
@@ -31,9 +32,24 @@ export default function Home() {
   const [prevScrollPos, setPrevScrollPos] = useState(0); // for previous scroll position
   const [visible, setVisible] = useState(true); // for navbar visibility
 
-  // Projects data
+  // Projects descriptions
   const projects = [
-    { image: proj1, description: "REACHED is an Android application designed to streamline attendance reporting and improve communication between teachers and parents in educational institutions. The app helps users efficiently manage daily attendance, reducing the time and resources required for attendance tracking." }
+    {
+      image: proj1,
+      description: "REACHED is an Android app that simplifies attendance reporting and messaging for educational institutions. It efficiently manages daily attendance, saving time and resources."
+    },
+    {
+      image: proj2,
+      description: "Patient Health Tracker is a web app designed for both patients and healthcare professionals to efficiently manage and monitor patient health information."
+    },
+    {
+      image: proj3,
+      description: "Number Recognizer ML is a machine learning model that utilizes Convolutional Neural Networks (CNNs) to accurately predict numbers from uploaded images, offering enhanced performance and accuracy in digit recognition tasks."
+    },
+    {
+      image: proj4,
+      description: "Motorbike Inventory App is a mobile application that allows users to effectively manage and track their motorbike inventory. It provides a user-friendly interface for adding, monitoring, and updating motorbike information, simplifying inventory management for motorbike dealerships, enthusiasts, and businesses."
+    }
   ];
 
   // Text to be gradually displayed --Intro
@@ -203,16 +219,16 @@ export default function Home() {
                     </ul>
                   </span>
                 </li>
-                
+
                 <li>
                   {/* Toggle between dark and light mode */}
                   {darkMode ? (
-                    <BsFillMoonFill
+                    <BsSun
                       onClick={() => setDarkMode(!darkMode)}
                       className="hover:text-teal-500 mr-6 cursor-pointer text-2xl"
                     />
                   ) : (
-                    <BsSun
+                    <BsFillMoonFill
                       onClick={() => setDarkMode(!darkMode)}
                       className="hover:text-teal-500 mr-6 cursor-pointer text-2xl"
                     />
@@ -253,7 +269,7 @@ export default function Home() {
                   <a href="https://www.linkedin.com/in/ivan-joshua-zapanta-00a70526a/" target="_blank" rel="noopener noreferrer">
                     <AiFillLinkedin className="icon linkedin-icon mr-12" />
                   </a>
-                  
+
                   {/* GitHub */}
                   <a href="https://github.com/IvanZapanta" target="_blank" rel="noopener noreferrer">
                     <AiFillGithub className="icon github-icon" />
@@ -278,50 +294,50 @@ export default function Home() {
             <div className="lg:flex gap-10">
 
               {/* Mobile dev */}
-              <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <div className="font-mono text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <Image src={design} width={150} height={150} />
-                <h3 className="font-mono text-lg font-medium pt-8 pb-2  ">
+                <h3 className="text-lg font-medium pt-8 pb-2  ">
                   <strong>Mobile Applications Development</strong>
                 </h3>
-                <p className="font-mono py-2">
+                <p className="py-2">
                   Created mobile app that enhanced user experience and functionality.
                 </p>
-                <h4 className="font-mono py-4 text-teal-600">Tools and Frameworks</h4>
-                <p className="font-mono text-gray-800 py-1">IDE: Android Studio</p>
-                <p className="font-mono text-gray-800 py-1">Languages: Java, Kotlin</p>
+                <h4 className="py-4 text-teal-600">Tools and Frameworks</h4>
+                <p className="text-gray-800 py-1">IDE: Android Studio, Visual Studio Code</p>
+                <p className="text-gray-800 py-1">Languages: Java, Kotlin</p>
               </div>
 
               {/* Web Dev */}
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <div className="font-mono text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <Image src={code} width={150} height={150} />
-                <h3 className="font-mono text-lg font-medium pt-8 pb-2 ">
+                <h3 className="text-lg font-medium pt-8 pb-2 ">
                   <strong>Web Applications Development</strong>
                 </h3>
-                <p className="font-mono py-2">
+                <p className="py-2">
                   Developed responsive and interactive web applications.
                 </p>
-                <h4 className="font-mono py-4 text-teal-600">Tools and Frameworks</h4>
-                <p className="font-mono text-gray-800 py-1">IDEs: Visual Studio Code</p>
-                <p className="font-mono text-gray-800 py-1">Languages: HTML, CSS, JavaScript</p>
-                <p className="font-mono text-gray-800 py-1">Frameworks: React.js, Angular</p>
-                <p className="font-mono text-gray-800 py-1">Back-End: Node.js, Express.js, MongoDB</p>
+                <h4 className="py-4 text-teal-600">Tools and Frameworks</h4>
+                <p className="text-gray-800 py-1">IDEs: Visual Studio Code, Pycharm</p>
+                <p className="text-gray-800 py-1">Languages: HTML, CSS, JavaScript</p>
+                <p className="text-gray-800 py-1">Frameworks: React.js, Angular</p>
+                <p className="text-gray-800 py-1">Back-End: Node.js, Express.js, MongoDB</p>
               </div>
 
               {/* AI */}
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <div className="font-mono text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <Image src={consulting} width={150} height={150} />
-                <h3 className="font-mono text-lg font-medium pt-8 pb-2 ">
+                <h3 className="text-lg font-medium pt-8 pb-2 ">
                   <strong>Artificial Intelligence</strong>
                 </h3>
-                <p className="font-mono py-2">
+                <p className="py-2">
                   Implemented AI algorithms and models to solve complex problems and automate tasks, improving efficiency and accuracy.
                 </p>
-                <h4 className="font-mono py-4 text-teal-600">Tools and Frameworks</h4>
-                <p className="font-mono text-gray-800 py-1">IDEs: Jupyter Notebook, Spyder</p>
-                <p className="font-mono text-gray-800 py-1">Language: Python</p>
-                <p className="font-mono text-gray-800 py-1">Libraries/Frameworks: TensorFlow, PyTorch, scikit-learn</p>
-                <p className="font-mono text-gray-800 py-1">Computer Vision: OpenCV, Keras</p>
-                <p className="font-mono text-gray-800 py-1">Natural Language Processing (NLP)</p>
+                <h4 className="py-4 text-teal-600">Tools and Frameworks</h4>
+                <p className="text-gray-800 py-1">IDEs: Jupyter Notebook, Spyder</p>
+                <p className="text-gray-800 py-1">Language: Python</p>
+                <p className="text-gray-800 py-1">Libraries/Frameworks: TensorFlow, PyTorch, scikit-learn</p>
+                <p className="text-gray-800 py-1">Computer Vision: OpenCV, Keras</p>
+                <p className="text-gray-800 py-1">Natural Language Processing (NLP)</p>
               </div>
             </div>
           </section>
@@ -338,48 +354,39 @@ export default function Home() {
                 apps that address various challenges, demonstrating my continuous growth and learning.
               </p>
             </div>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              {projects.map((project, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-                <div className="basis-1/3 flex-1 dark:text-white" key={index}>
-                  {/* Project 1 */}
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={"100%"}
-                    height={"100%"}
-                    src={project.image}
-                    alt={`Project ${index + 1}`}
-                  />
-                  <p className="font-mono py-4">{project.description}</p>
+              {/* Iterate over each project in the 'projects' array */}
+              {projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="shadow-lg rounded-xl overflow-hidden mt-8"
+                  style={{ filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))' }}
+                >
+                  <div className="relative">
+                    <Image
+                      src={project.image}
+                      alt={`Project ${index + 1}`}
+                      width={600}
+                      height={400}
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <p className="font-mono text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
               ))}
-
-              <div className="basis-1/3 flex-1">
-                {/* Project 2 */}
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  src={proj2}
-                />
-              </div>
-
-              <div className="basis-1/3 flex-1">
-                {/* Project 3 */}
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  src={proj3}
-                />
-              </div>
             </div>
           </section>
         </Fade>
 
         {/* Footer */}
-        <footer className="py-4 text-center text-gray-500 dark:text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Ivan Joshua Zapanta. All rights reserved.
+        <footer className="font-mono mt-5 mb-5 py-4 text-center text-gray-500 dark:text-gray-400 text-sm">
+          &copy; {new Date().getFullYear()}- Designed and Developed by: Ivan Joshua Zapanta.
         </footer>
       </main>
     </div>
