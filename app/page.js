@@ -293,20 +293,6 @@ export default function Home() {
             </div>
             <div className="lg:flex gap-10">
 
-              {/* Mobile dev */}
-              <div className="font-mono text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-                <Image src={design} width={150} height={150} />
-                <h3 className="text-lg font-medium pt-8 pb-2  ">
-                  <strong>Mobile Applications Development</strong>
-                </h3>
-                <p className="py-2">
-                  Created mobile app that enhanced user experience and functionality.
-                </p>
-                <h4 className="py-4 text-teal-600">Tools and Frameworks</h4>
-                <p className="text-gray-800 py-1">IDE: Android Studio, Visual Studio Code</p>
-                <p className="text-gray-800 py-1">Languages: Java, Kotlin</p>
-              </div>
-
               {/* Web Dev */}
               <div className="font-mono text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                 <Image src={code} width={150} height={150} />
@@ -321,6 +307,20 @@ export default function Home() {
                 <p className="text-gray-800 py-1">Languages: HTML, CSS, JavaScript</p>
                 <p className="text-gray-800 py-1">Frameworks: React.js, Angular</p>
                 <p className="text-gray-800 py-1">Back-End: Node.js, Express.js, MongoDB</p>
+              </div>
+
+              {/* Mobile dev */}
+              <div className="font-mono text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+                <Image src={design} width={150} height={150} />
+                <h3 className="text-lg font-medium pt-8 pb-2  ">
+                  <strong>Mobile Applications Development</strong>
+                </h3>
+                <p className="py-2">
+                  Created mobile app that enhanced user experience and functionality.
+                </p>
+                <h4 className="py-4 text-teal-600">Tools and Frameworks</h4>
+                <p className="text-gray-800 py-1">IDE: Android Studio, Visual Studio Code</p>
+                <p className="text-gray-800 py-1">Languages: Java, Kotlin</p>
               </div>
 
               {/* AI */}
@@ -386,7 +386,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="font-mono mt-5 mb-5 py-4 text-center text-gray-500 dark:text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()}- Designed and Developed by: Ivan Joshua Zapanta.
+          &copy; {new Date().getFullYear()}- Designed & Built by Ivan Joshua Zapanta
         </footer>
       </main>
     </div>
