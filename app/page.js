@@ -89,7 +89,7 @@ export default function Home() {
   const handleDownloadResume = () => {
     const shouldDownload = window.confirm("Would you like to proceed with downloading my resume?");
     if (shouldDownload) {
-      const resumeFileName = "Ivan Joshua Zapanta.pdf";
+      const resumeFileName = "Ivan_Joshua_Zapanta.pdf";
       const downloadLink = document.createElement("a");
       downloadLink.href = `/${resumeFileName}`;
       downloadLink.download = resumeFileName;
